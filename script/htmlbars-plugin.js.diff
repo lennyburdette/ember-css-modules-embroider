@@ -1,0 +1,9 @@
+37d36
+< 
+38a38,43
+>     name = name.replace(/\/private\/var\/folders\/[^/]+\/[^/]+\/T\/embroider\/[^/]+\/packages\//, '');
+> 
+>     if (name.startsWith('templates/')) {
+>       name = `my-addon/${name}`;
+>     }
+> 
